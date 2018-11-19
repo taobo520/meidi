@@ -1,0 +1,21 @@
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+.footer li{
+    float: left;
+    list-style: none;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+}
+a{
+     text-decoration: none;
+     color: black;
+}
+a:hover{
+    color: #46B8DA;
+}

@@ -1,0 +1,36 @@
+.denglu{
+    width:1200px;
+    margin: 0 auto;
+    height: 800px;
+    background: url(../images/zhuce.png) 240px 88px no-repeat;
+    position: relative;
+    background-size: 380px 380px;
+}
+form{
+    width:380px;
+    height: 480px;
+    border: 1px solid #d6d6d6;
+    margin-left: 750px;
+    margin-top: 60px;
+}
+input{
+    width: 300px;
+    height: 42px;
+    margin-top: 50px;
+    margin-left: 50px}
+button{
+    display: block;
+    width: 300px;
+    height: 42px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: #0092d8;
+    text-align: center;
+    font-size: 18px;
+    line-height: 42px;
+    text-decoration: none;
+}
+.had{
+      margin-left: 50px;
+      color: black;
+}

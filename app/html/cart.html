@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="/libs/require/require.js" data-main="/js/cart"></script>
+	    <script src="/libs/jquery/jquery-1.11.3.js"></script>
+	    <link rel="stylesheet" type="text/css" href="/css/component/header.css" >
+	    <link rel="stylesheet" type="text/css" href="/css/component/footer.css" >
+	    <style>
+	    	ul{
+	    		width: 1200px;
+	    		margin: 0 auto;
+	    	}
+		 span{
+		 	padding: 10px;
+		 }
+		 li{
+			list-style:none;
+			border-bottom: 1px solid #f4f4f4;
+		 }
+		 li span{
+			width:280px;
+			display:inline-block;
+			text-align:center;
+		 }
+		 .jiesuan{
+		 	width: 1200px;
+		 	margin: 0 auto;
+		 	height: 30px;
+		 	background: #f4f4f4;
+		 	
+		 }
+		 #t{
+		 	width: 500px;
+		 		height: 30px;
+		 
+		 	
+		 }
+		 #btn{
+		 	width: 60px;
+		 		height: 30px;
+		 		background: #ff6600;
+		 }
+	</style>
+	</head>
+	<body>
+		<header></header>
+		
+		<ul id="demo">
+			<li><input type="checkbox" id="allcheck"/>全选<span>名称</span><span>数量</span><span>价格</span></li>
+		</ul>
+		<div class="jiesuan">
+		总金额 ：<input type="text" id="t"><input type="button" value="点击结算" id="btn"/>
+		</div>
+	</body>
+</html>

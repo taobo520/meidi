@@ -1,0 +1,239 @@
+* {margin:0; padding:0; }
+ul li{
+    list-style: none;
+}
+
+
+.slider{
+    position: relative;
+    width: 1200px;
+    height: 680px;
+    margin: 0 auto;
+    border-bottom: 2px solid #dfe0e2;
+   
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.lunbo-left{
+    position: absolute;
+    width: 220px;
+    height: 480px;
+    top: 46px;  
+}
+.lunbo-left ul{
+    width: 220px;
+    height: 455px;
+    border: 1px solid #e0e0e0;
+    margin-left: 45px;
+     background: #0e1235;
+      overflow: hidden;
+}
+.lunbo-left ul li{
+   line-height: 50px;
+   padding-left: 20px;
+   list-style: none;
+   color: white;
+}
+.lunbo-left ul li:hover{
+    background: #0092D8;
+}
+.liebiao{
+    width: 1200px;
+    height: 198px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    margin-top:8px;
+}
+.liebiao ul{
+    width: 1200px;
+    height: 198px;
+}
+.liebiao ul li{
+    width: 299px;
+    height: 198px;
+    float: left;
+    border-right:1px solid #e0e0e0;
+    list-style: none;
+}
+.liebiao ul li img{
+    margin-left: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.liebiao ul li img:hover{
+    transform: scale(1.2);
+}
+.mingdan{
+    width: 1200px;
+    height: 188px;
+    margin: 0 auto;
+}
+.mingdan p{
+    text-align:  center;
+    line-height: 188px;
+    font-size: 20px;
+}
+.dianqi{
+    width: 1200px;
+    height: 682px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+}
+.dianqi-left{
+    width: 600px;
+    height: 682px;
+    float: left;
+}
+.dianqi-right{
+    width: 600px;
+    height: 682px;
+    float: left;
+    
+}
+.dianqi-right .dian-top{
+    width: 600px;
+    height: 341px;
+    float: left;
+}
+ .dian-top li{
+    width: 300px;
+    height: 341px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    transition: all 0.6s; 
+}
+.dian-top img{
+    width: 180px;
+    height: 170px;
+    margin-left: 64px;
+    margin-top: 50px;
+     
+    
+}
+.dian-top li:hover{
+    transform: scale(1.1);
+    color:orangered;
+}
+.dian-top p{
+    text-align: center;
+    font-size: 16px;
+}
+.dianqi-right .dianbu{
+    width: 600px;
+    height: 341px;
+    float: left;
+}
+ .dianbu li{
+    width: 300px;
+    height: 341px;
+    list-style: none;
+    float: left;
+     cursor: pointer;
+    transition: all 0.6s; 
+}
+.dianbu li:hover{
+    transform: scale(1.1);
+    color: orangered;
+}
+.dianbu img{
+    width: 180px;
+    height: 170px;
+    margin-left: 64px;
+    
+}
+.dianbu p{
+    text-align: center;
+    font-size: 16px;
+}
+.dian{
+     width: 1200px;
+    height: 682px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+}
+.dian-left{
+    width: 600px;
+    height: 682px;
+    float: left;
+}
+.dian .left-top{
+    height: 341px;
+}
+.dian .left-di{
+     width: 600px;
+    height: 341px;
+    float: left;
+    
+}
+.dian .left-di li{
+    width: 300px;
+    height: 341px;
+    list-style: none;
+    float: left;
+     cursor: pointer;
+    transition: all 0.6s;
+}
+.dian .left-di img{
+    width: 180px;
+    height: 170px;
+    margin-left: 64px;
+   
+    
+}
+.dian .left-di li:hover{
+    transform: scale(1.2);
+    color: orangered;
+}
+.dian .left-di p{
+    text-align: center;
+    font-size: 16px;
+}
+.dian .dian-right{
+    width: 600px;
+    height: 682px;
+    float: left;
+}
+.dian .dian-right p{
+    text-align: center;
+}
+.huiyuan{
+    width: 1200px;
+    height: 188px;
+    margin: 0 auto;
+}
+.huiyuan p{
+    text-align:  center;
+    line-height: 188px;
+    font-size: 20px;
+}
+.dinggou{
+    width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0 ;
+}
+.dinggou ul li{
+    width:298px;
+    height: 420px;
+    float: left;
+    border: 1px solid #e0e0e0;
+}
+.dinggou ul li p{
+    width:125px;
+    height: 39px;
+    text-align: center;
+   border: 1px solid #e0e0e0;
+    margin-left: 85px;
+    line-height: 39px;
+}
+.dinggou ul li p:hover{
+    background: #0092D8;
+}
+.dinggou ul li img{
+   
+   margin-left: 49px;
+}

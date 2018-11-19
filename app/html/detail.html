@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<script src="/libs/require/require.js" data-main="/js/detail"></script>
+	<script src="/libs/jquery/jquery-1.11.3.js"></script>
+	
+	 <link rel="stylesheet" type="text/css" href="/css/component/header.css" >
+	 <link rel="stylesheet" type="text/css" href="/css/component/footer.css" >
+	 
+	 <style type="text/css">
+	 	#detail{
+	 		width: 1200px;
+	 		height: 600px;
+	 		margin: 0 auto;
+	 		border-bottom: 1px solid #eeeeee;
+	 		
+	 	}
+	 	*{
+	 		margin: 0;padding: 0;
+	 	}
+	 	.hhh{
+	 		width: 600px;
+	 		height: 600px;
+	 		float: right;
+	 	}
+	 	.hhh .price{
+	 		font-size: 20px;
+	 		color: red;
+	 		margin-top: 20px;
+	 	}
+	 	.hhh p{
+	 		margin-top: 30px;
+	 		color: #c2a2a2;
+	 	}
+	 	#detail img{
+	 		float: left;
+	 	}
+	 	.hhh p span{
+	 		
+	 		color:black;
+	 	}
+	 	
+	 .x-nav{
+	 	width: 1200px;
+	 	margin: 0 auto;
+	 	border-bottom: 1px solid #eeeeee;
+	 }
+	  .x-nav ul li{
+	  	list-style: none;
+	  }
+	 a:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            a:link {
+                text-decoration: none;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0
+            }
+            
+            ul,
+            li {
+                list-style: none;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            a:link {
+                text-decoration: none;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            
+            .btn-numbox {
+                overflow: hidden;
+                margin-top: 20px;
+            }
+            
+            .btn-numbox li {
+                float: left;
+            }
+            
+            .btn-numbox li .number,
+            .kucun {
+                display: inline-block;
+                font-size: 12px;
+                color: #808080;
+                vertical-align: sub;
+            }
+            
+            .btn-numbox .count {
+                overflow: hidden;
+                margin: 0 16px 0 20px;
+            }
+            
+            .btn-numbox .count .num-jian,
+            .input-num,
+            .num-jia {
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                font-size: 18px;
+                color: #999;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+            }
+            .btn-numbox .count .input-num {
+                width: 58px;
+                height: 26px;
+                color: #333;
+                border-left: 0;
+                border-right: 0;
+            }
+	 	
+	 </style>
+	</head>
+	<body>
+		<header></header>
+		<div class="x-nav">
+				<ul><li>首页&nbsp;&nbsp;&nbsp;配件及周边&nbsp;&nbsp;&nbsp;清洗服务&nbsp;&nbsp;&nbsp;洗衣机上门服务</li></ul>
+					
+				
+		</div>
+		<div id="detail">
+			
+		</div>
+		<footer></footer>
+		<script type="text/html" id="detail-template">
+
+			<img src="{{product.img}}" class="middle-zoom">
+			<div id="gal1">
+							{{each img curr}}
+							<a href="javascript:;" data-image="{{curr.middle}}" data-zoom-image="{{curr.big}}">
+								<img src="{{curr.small}}" alt="" class="prod-img">
+							</a>
+							{{/each}}
+						</div>
+		   <div class="hhh">
+		 	<h3 class="name">{{product.name}}</h3>
+			<p class="price">价格：￥{{product.price}}</p>
+			<p>优惠&nbsp;<span>送积分</span>&nbsp;&nbsp;<span>最高送279积分</span></p>
+			<p>领券&nbsp;&nbsp;<span>满0减30</span></p>
+			<p>评价&nbsp;&nbsp;<span>安装员很专业</span>&nbsp;&nbsp;<span>很有责任心</span>&nbsp;&nbsp;<span>喜欢</span></p>
+			<div style="width: 390px;height: 70px;">
+				<P style="float: left;color: #c2a2a2;" >颜色</P>
+				<span style="line-height: 60px;"><img src="/images/x-1.jpg" style="width: 80px;height: 40px;margin-top: 10px;" class="x-1">陶瓷白</span>
+			</div>
+			　<ul class="btn-numbox">
+            <li><span class="number">数量</span></li>
+            <li>
+                <ul class="count">
+                    <li><span id="num-jian" class="num-jian">-</span></li>
+                    <li><input type="text" class="input-num" id="input-num" value="0" /></li>
+                    <li><span id="num-jia" class="num-jia">+</span></li>
+                </ul>
+            </li>
+            <li><span class="kucun">（库存:54）</span></li>
+　　　  </ul>
+				<div class="a-g" style="width:425px;height: 40px;text-align: center;line-height: 40px;">
+					<a class="addme" style="width:208px;height: 40px;display:block;background:#2AABD2;float: left;">加入购物车</a>
+					<a class="goumai"style="width:208px;height: 40px;display:block;background:#2AABD2;float: left;margin-left: 5px;">立即购买</a>
+					
+				</div>
+		    </div>
+		</script>
+   <script>
+   	　 var num_jia = document.getElementById("num-jia");
+        var num_jian = document.getElementById("num-jian");
+        var input_num = document.getElementById("input-num");
+       $("body").on("click",".num-jian",function (m) {
+           var obj = $(this).closest("ul").find(".input-num");
+           if (obj.val() <= 0) {
+                obj.val(0);
+           } else {
+                obj.val(parseInt(obj.val()) - 1);
+           }
+           //obj.change();
+     });
+     $("body").on("click",".num-jia",function (m) {
+           var obj = $(this).closest("ul").find(".input-num");
+           obj.val(parseInt(obj.val()) + 1);
+          // obj.change();
+     });
+          var arr =[];
+          $("body").on("click",".addme",function(){
+          	var obj = {
+          		img:$(".middle-zoom").attr("src"),
+          		name:$(".name").html(),
+      		    no:$(".input-num").val(),
+      		    price:$(".price").html(),
+      	};
+      	console.log(obj);
+      	arr.push(obj);
+      	var str =JSON.stringify(arr);
+      	console.log(str);
+          	$.cookie("cart",str,{expires:7,path:"/"});
+          	
+          });
+      
+   </script>
+   
+	</body>
+</html>
